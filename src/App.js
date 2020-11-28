@@ -1,11 +1,13 @@
-import './App.css';
+import React, { Component } from 'react'
 
-function App() {
-  return (
-    <div className="App">
-     Meme Generator
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div>
+        Welcome!!
+      </div>
+    )
+  }
 }
 
-export default App;
+export default App
