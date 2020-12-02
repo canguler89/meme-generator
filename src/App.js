@@ -4,7 +4,7 @@ class App extends Component {
   render() {
     return (
       <div>
-        Welcome!!
+        Welcome to the Meme factory!!!
       </div>
     )
   }
