@@ -8,7 +8,6 @@ function receiveMemes(json){
         memes
     }
 }
-
 function fetchMemesJson(){
     return fetch("https://api.imgflip.com/get_memes")
         .then(response => response.json())
