@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { connect } from "react-redux";
 import Items from "./components/Items"
 
+import { Form, FormControl, FormGroup, FormLabel } from "react-bootstrap"
 
 class App extends Component {
   constructor(){
@@ -15,6 +16,23 @@ class App extends Component {
     return (
       <div>
         <h2>Welcome to the Meme factory!!!</h2>
+        <Form className="form1">
+          <FormGroup>
+            <FormLabel>Top</FormLabel>
+            {" "}
+            <FormControl 
+            type="text"
+            ></FormControl>
+          </FormGroup>
+          {" "}
+          <FormGroup>
+            <FormLabel>Bottom</FormLabel>
+            <FormControl
+            type="text">
+
+            </FormControl>
+          </FormGroup>
+        </Form>
         {
           this.props.memes.slice(0, this.state.memeLimit).map((meme,index)=>{
             return (
